@@ -1,0 +1,55 @@
+
+# ============= user variables ===============================
+
+# text datafile of the const-E profile.
+datafile="constE_37.0to40.0meV.txt"
+
+# Initial guess for the momentum q of the spin wave, L=1+/-q 
+q = 0.1
+
+# Initial guess for the background
+BG = 1e6
+
+# Initial guess for the half width at half maximum
+HWHM = 0.05
+
+# Initial guess for the peak height
+A = 1.5e6
+
+# Minimum and Maximum of L index for fitting
+L_min=0.5
+L_max=1.6
+
+# ========= please do not change following commands =============
+
+A1=A
+A2=A
+
+F(x)=abs(BG)+A1*exp(-log(2.0)*(x-(1.0-q))**2.0/HWHM**2.0)+A2*exp(-log(2.0)*(x-(1.0+q))**2.0/HWHM**2.0)
+
+fit [L_min:L_max] F(x) datafile u 1:3:4 via BG,q,A1,A2,HWHM
+
+set term png size 800, 500
+set size ratio 0.5  # ratio r = height/width
+set out sprintf('%s_fit.png',datafile)
+set key left top
+
+set title "fitting result" font "Arial,14" 
+set xlabel 'L (r. l. u)' font "Arial,16" 
+set ylabel 'Intensity (arb. units)' font "Arial,16" 
+
+
+set style line 1 lt 1 lc "#ff0000" lw 1 pt 7 ps 1.5
+set style line 2 lt 1 lc "#8080FF" lw 2 pt 7 ps 1.5
+set style line 3 lt 1 lc "#00C000" lw 1 pt 7 ps 1.5
+set style line 11 lt 1 lc "#000000" lw 1 pt 6 ps 1.5
+
+set yrange[0:]
+set xrange[L_min:L_max]
+
+plot F(x) ls 3 t "fit", datafile u 1:3:4 w yer ls 1 not,\
+datafile using 1:3 w p ls 11 not
+
+set out
+
+

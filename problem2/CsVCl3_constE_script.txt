@@ -85,6 +85,7 @@ set xrange[L_min:L_max]
 plot Int_ave using (X[$1]):2:(sqrt(Err_ave[$1])) w yer ls 1 not,\
 Int_ave using (X[$1]):2 w p ls 11 not,\
 
+set auto x
 set out
 
 
