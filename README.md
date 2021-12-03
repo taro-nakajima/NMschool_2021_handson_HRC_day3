@@ -15,6 +15,14 @@ Draw Q-E (L-E) maps of CsVCl<sub>3</sub> measured with E<sub>i</sub>=102 meV and
 
 <img width="800" src="https://user-images.githubusercontent.com/50174733/144559576-035106f4-7612-488b-9e4c-c33d3867dc2c.png">
 
-Extract peak positions of the magnetic excitations, and fit them to the theoretical dispersion relationship. (60 min) gnuplot scriptを提供。 
+* Extract peak positions of the magnetic excitations using "peakfit_script.txt".
+    * Open "peakfit_script.txt" by a text editor.
+    * Set the filename of the constant-E profile (txt file) to the variable "datafile". 
+    * Set appropriate initial guess values for BG, q, A, HWHM.
+    * Run the "peakfit_script.txt" on gnuplot
+    * The result of the fitting analysis will appear as below. Copy the refined value of "q" and its error and paste them to a text file with the mean energy of the const-E cut.
+<img width="800" src="https://user-images.githubusercontent.com/50174733/144569380-93766229-9e31-4d3f-99b7-4028ebeddc94.png">
+
+* Finally, plot the mean energy as a function of q. The dispersion relation should be fitted by the equation
 
 ## Sec. 3: A short lecture on magnetic excitations in CsVCl<sub>3</sub> by Prof. Itoh
