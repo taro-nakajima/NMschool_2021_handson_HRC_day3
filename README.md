@@ -19,6 +19,7 @@ Draw Q-E (L-E) maps of CsVCl<sub>3</sub> measured with E<sub>i</sub>=102 meV and
     * Open "peakfit_script.txt" by a text editor.
     * Set the filename of the constant-E profile (txt file) to the variable "datafile". 
     * Set appropriate initial guess values for BG, q, A, HWHM.
+    * Set L_min and L_min, which are the minimum and maximum L-indices used for fitting. Note that **"L_min" should be larger than that of the leftmost datapoint** in the profile which you are going to fit. 
     * Run the "peakfit_script.txt" on gnuplot
     * The result of the fitting analysis will appear as below. Copy the refined value of "q" and its error and paste them to a text file with the mean energy of the const-E cut.
 <img width="800" src="https://user-images.githubusercontent.com/50174733/144569380-93766229-9e31-4d3f-99b7-4028ebeddc94.png">
