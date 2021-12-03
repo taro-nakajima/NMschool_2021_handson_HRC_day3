@@ -9,7 +9,9 @@ Draw Q-E (L-E) maps of CsVCl<sub>3</sub> measured with E<sub>i</sub>=102 meV and
 
 ### Problem 2
 * Draw const-E cuts of the data measured with E<sub>i</sub>=102 meV.
-* 
+    * Open "CsVCl3_constE_script.txt" by a text editor.
+    * Set values for "IntegE_min" and "IntegE_max", which are the minimum and maximum energies for integration with respect to E.
+    * Load the script in gnuplot, and then a png file showing the const-E profile and a txt datafile of the profile.
 
 <img width="800" src="https://user-images.githubusercontent.com/50174733/144559576-035106f4-7612-488b-9e4c-c33d3867dc2c.png">
 
