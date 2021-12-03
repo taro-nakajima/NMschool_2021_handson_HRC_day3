@@ -8,7 +8,7 @@ Draw Q-E (L-E) maps of CsVCl<sub>3</sub> measured with E<sub>i</sub>=102 meV and
 * Download (or clone) this repository and load the script "CsVCl3_contour_plot_script.txt" in gnuplot.
 
 ### Problem 2
-Draw const-E cuts of the data measured with E<sub>i</sub>=102 meV.
+* Draw const-E cuts of the data measured with E<sub>i</sub>=102 meV.
 
 Extract peak positions of the magnetic excitations, and fit them to the theoretical dispersion relationship. (60 min) gnuplot scriptを提供。 
 
