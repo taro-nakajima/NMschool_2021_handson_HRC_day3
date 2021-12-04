@@ -1,6 +1,11 @@
 # Hands-on experiments at HRC(BL12), NM school 2021, Day 3
 
-## Sec.1: Introduction of the DAVE software
+## Sec.1: Introduction of the MSlice software
+We are using MSlice software to visualize the inelastic scattering data, which are generally 4D matrices containing Q<sub>x</sub>,Q<sub>y</sub>,Q<sub>z</sub> (or H,K,L), and E.
+MSlice is included in the Data Analysis and Visualization Environment "DAVE".
+
+https://www.ncnr.nist.gov/dave/
+
 ## Sec.2: constant-E and constant-Q cuts
 
 ### Problem 1
