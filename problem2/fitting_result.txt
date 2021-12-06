@@ -1,0 +1,4 @@
+# Mean_energy(meV)  q(r.l.u.)  q_err
+# 38.5  0.155  0.0035  # example
+# 25.0  0.100  0.0235  # example
+
