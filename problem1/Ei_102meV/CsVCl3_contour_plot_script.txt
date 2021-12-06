@@ -39,7 +39,7 @@ set xlabel '(0,0,L) (r. l. u.)'
 set ylabel 'Energy (meV)'
 set cblabel 'Intensity'
 
-splot "CsVCl3_processed_data_Ei_102meV.txt" u 1:2:3
+splot "CsVCl3_processed_data_Ei_102meV.txt" u 1:2:3 not
 
 unset pm3d
 set surface
