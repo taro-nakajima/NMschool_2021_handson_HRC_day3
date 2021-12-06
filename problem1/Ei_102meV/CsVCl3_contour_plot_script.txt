@@ -29,7 +29,7 @@ set yrange[Emin:Emax]
 set xrange[Lmin:Lmax]
 set cbran[0:cbmax]
 
-set palette defined (-8 "black", -4 "blue", -1 "red", 1 "orange", 5 "yellow", 10 "white")
+set palette defined (-8 "white", -7 "blue", -1 "green", 1 "yellow", 5 "orange", 10 "red")
 
 set title 'CsVCl_3 T=20 K, E_i=102 meV' font "Arial,16" 
 set xlabel '(0,0,L) (r. l. u.)' font "Arial,16" 
