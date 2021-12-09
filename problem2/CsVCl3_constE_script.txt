@@ -2,8 +2,8 @@
 # ============= user variables ===============================
 
 # Minimum and maximum energies for integration
-IntegE_min = 27.0
-IntegE_max = 30.0
+IntegE_min = 20.0
+IntegE_max = 22.0
 
 # Minimum and Maximum of L index for plotting
 L_min=0.4
@@ -17,10 +17,10 @@ L_max=1.6
 
 datafile="CsVCl3_processed_data_Ei_102meV.txt"
 
-BinNum_Q=183
-BinNum_E=200
-Emin=0.25
-Estep=0.50
+BinNum_Q=122
+BinNum_E=100
+Emin=0.5
+Estep=1
 
 array Int_ave[BinNum_Q]
 array Err_ave[BinNum_Q]

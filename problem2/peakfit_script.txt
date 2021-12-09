@@ -2,22 +2,22 @@
 # ============= user variables ===============================
 
 # text datafile of the const-E profile.
-datafile="constE_37.0to40.0meV.txt"
+datafile="constE_20.0to22.0meV.txt"
 
 # Initial guess for the momentum q of the spin wave, L=1+/-q 
-q = 0.1
+q = 0.05
 
 # Initial guess for the background
-BG = 1e6
+BG = 3e6
 
 # Initial guess for the half width at half maximum
 HWHM = 0.05
 
 # Initial guess for the peak height
-A = 1.5e6
+A = 4e6
 
 # Minimum and Maximum of L index for fitting
-L_min=0.5
+L_min=0.45
 L_max=1.6
 
 # ========= please do not change following commands =============
